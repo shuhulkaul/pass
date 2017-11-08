@@ -61,7 +61,7 @@ body, html {
       <i class="fa fa-bars"></i>
     </a>
     <a href="index.jsp" class="w3-bar-item w3-button">HOME</a>
-     <a href="home.jsp" class="w3-bar-item w3-button">SIGN UP</a>
+     <a href="signup.jsp" class="w3-bar-item w3-button">SIGN UP</a>
     <a href="signin.jsp" class="w3-bar-item w3-button">SIGN IN</a>
  </div>
 
@@ -71,7 +71,7 @@ body, html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-   <a href="home.jsp" class="w3-bar-item w3-button">					
+   <a href="signup.jsp" class="w3-bar-item w3-button">					
   <button type="submit">Sign Up</button> </a>
    <a href="signin.jsp" class="w3-bar-item w3-button">
   <button type="submit" >Sign In</button> </a>

@@ -1,7 +1,8 @@
   <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sign Up Form</title>
+         <%String name=(String)session.getAttribute("name");%>
+        <title><%= name %>:: Delete Account</title>
                <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -15,9 +16,8 @@
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="index.jsp" class="w3-bar-item w3-button">HOME</a>
-     <a href="home.jsp" class="w3-bar-item w3-button">SIGN UP</a>
-  <a href="signin.jsp" class="w3-bar-item w3-button">SIGN IN</a>
+  <a href="logout.jsp" class="w3-bar-item w3-button">LOGOUT</a>
+  <a href="changepassword.jsp" class="w3-bar-item w3-button">CHANGE PASSWORD</a>
   </div>
 
  <br>
@@ -25,11 +25,10 @@
       <form action="delete" method="post">
       
         <h1>Delete Account</h1>
-        
         <fieldset>
           <legend><span class="number">1</span> Your basic info</legend>
           <label for="username">Username:</label>
-          <input type="text" id="username" name="username">
+          <input type="text" id="username" name="username" value="<%=name %>" readonly>
           
           <label for="password">Password:</label>
           <input type="password" id="password" name="password">

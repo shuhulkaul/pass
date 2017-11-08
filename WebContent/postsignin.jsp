@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<title>Home</title>
+<%String name=(String)session.getAttribute("name");%>
+<title><%=name %>:: Home</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -60,16 +61,16 @@ body, html {
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="index.jsp" class="w3-bar-item w3-button">HOME</a>
+    <a href="logout.jsp" class="w3-bar-item w3-button">LOGOUT</a>
    </div>
 
  <br>
 </div>
-
+		
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
 <div class="w3-display-middle" style="white-space:nowrap;">
-   <a href="home2.jsp" class="w3-bar-item w3-button">
+   <a href="changepassword.jsp" class="w3-bar-item w3-button">
   <button type="submit" >Change Password</button> </a>
   <a href="delete.jsp" class="w3-bar-item w3-button">
   <button type="submit">Delete Account</button> </a>

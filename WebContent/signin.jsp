@@ -16,7 +16,7 @@
       <i class="fa fa-bars"></i>
     </a>
     <a href="index.jsp" class="w3-bar-item w3-button">HOME</a>
-     <a href="home.jsp" class="w3-bar-item w3-button">SIGN UP</a>
+     <a href="signup.jsp" class="w3-bar-item w3-button">SIGN UP</a>
    </div>
 
  <br>

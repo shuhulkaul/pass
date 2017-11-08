@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class FIrst
@@ -63,8 +64,10 @@ public class Signin extends HttpServlet {
 			
 			if(rs.absolute(1)) {
 				String user=rs.getString(1);
-				out.print("<font color=#ff0000><center>Hello " + user+"!</center></font><br>");
-				
+				HttpSession session=request.getSession();
+				session.setAttribute("name",user);
+		
+				out.println("<font color=#ff0000><center>Hello " + user+"!</center></font>");
 				RequestDispatcher rd = request.getRequestDispatcher("postsignin.jsp");
 				rd.include(request, response);
 				
